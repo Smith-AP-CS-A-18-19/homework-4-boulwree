@@ -1,9 +1,14 @@
+//Reece Boulware
 public class Homework4 {
 
-	/* Finish the constructor and create any necessary instance
-	 * variables
-	 */
+	// Finish the constructor and create any necessary instance
+	// variables
+
+private int x;
+private String y;
 	public Homework4(String s, int i) {
+		x = i;
+		y = s;
 
 	}
 
@@ -11,7 +16,9 @@ public class Homework4 {
 	 * provided double. Cast the number after the
 	 * multiplication
 	 */
-	public int multiply(double d) {
+	public double multiply(double d) {
+    double z =  (double) x * d - 0.25;
+		return z;
 
 	}
 
@@ -19,6 +26,9 @@ public class Homework4 {
 	 * product by the stored number
 	 */
 	public double sumProduct(int a, double b) {
+		double sum = (double) a + b;
+		double product = sum * x - 2.25;
+		return product;
 
 	}
 
@@ -26,12 +36,17 @@ public class Homework4 {
 	 * the integer portion of the provided double
 	 */
 	 public int remainder(double d) {
+		 int remainder = x % (int) d;
+		 return remainder;
+
 
 	}
 
 	/* Return the length of the stored String
 	 */
 	public int getLength() {
+		int n = y.length();
+		return n;
 
 	}
 
@@ -39,6 +54,8 @@ public class Homework4 {
 	 * String. Put a space between the two Strings
 	 */
 	public String concat(String s) {
+		String concat = y.replace(",", "") + " " + s;
+		return concat;
 
 	}
 
