@@ -17,6 +17,9 @@ private String y;
 	 * multiplication
 	 */
 	public double multiply(double d) {
+		/* Don't just subtract, instead cast to an int
+		 * Also, don't change return type of the method
+		 */
     double z =  (double) x * d - 0.25;
 		return z;
 
